@@ -55,7 +55,7 @@ class SecondFragment : Fragment(), AdapterView.OnItemSelectedListener{
         ArrayAdapter.createFromResource(
             this.requireContext(),
             R.array.number_of_shots,
-            android.R.layout.simple_spinner_item
+            R.layout.spinner_item
 
         ).also { adapter ->
             // Specify the layout to use when the list of choices appears.

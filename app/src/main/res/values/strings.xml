@@ -2,7 +2,8 @@
     <string name="app_name">My First App</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">Get In!</string>
+    <string name="get_text">GET</string>
+    <string name="in_text">IN</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="start_putting_text">Start Putting!</string>
     <string name="Begin">Begin!</string>
@@ -21,7 +22,7 @@
     <string name="blank_fragment_label">"Blank Fragment "</string>
 
     <string name="selected_item">Selected item:</string>
-    <string name="number_of_shots">Number of Shots:</string>
+    <string name="number_of_shots">Select number of putts:</string>
     <string name="distance_from_basket">Distance From Basket:</string>
     <string name="made_shot_text">Chains</string>
     <string name="num_shots_remaining">5</string>

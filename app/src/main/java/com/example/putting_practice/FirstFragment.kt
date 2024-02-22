@@ -38,12 +38,6 @@ class FirstFragment : Fragment() {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
 
-        view.findViewById<Button>(R.id.toast_button).setOnClickListener {
-            // create a Toast with some text, to appear for a short time
-            val myToast = Toast.makeText(context, "Hello Toast!", Toast.LENGTH_SHORT)
-            // show the Toast
-            myToast.show()
-        }
 
     }
 
