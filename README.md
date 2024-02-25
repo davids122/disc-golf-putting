@@ -11,4 +11,5 @@ In the future, I would like to add a feature that allows users to view their pas
 
 
 ## Demo Video
-https://github.com/davids122/disc-golf-putting/assets/97635001/b57fe62b-8db0-4411-bf1d-12665a6e2b58
+https://github.com/davids122/disc-golf-putting/assets/97635001/4f5a8d01-150e-447b-bbf1-1dab7678bfa9
+
