@@ -8,6 +8,7 @@
     <fragment
         android:id="@+id/FirstFragment"
         android:name="com.example.putting_practice.FirstFragment"
+        android:label="Home"
         tools:layout="@layout/fragment_first">
 
         <action
@@ -17,7 +18,7 @@
     <fragment
         android:id="@+id/SecondFragment"
         android:name="com.example.putting_practice.SecondFragment"
-        android:label="@string/second_fragment_label"
+        android:label="Select Putt Amount"
         tools:layout="@layout/fragment_second">
 
         <action
@@ -27,9 +28,21 @@
     <fragment
         android:id="@+id/CountingFragment"
         android:name="com.example.putting_practice.CountingFragment"
-        android:label="Counting Fragment"
+        android:label="Putt!"
         tools:layout="@layout/fragment_counting"
         >
-
+        <action
+            android:id="@+id/action_CountingFragment_to_StatsFragment"
+            app:destination="@+id/StatsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/StatsFragment"
+        android:name="com.example.putting_practice.StatsFragment"
+        android:label="Stats"
+        tools:layout="@layout/fragment_stats1"
+        >
+        <action
+            android:id="@+id/StatsFragment_to_SecondFragment"
+            app:destination="@+id/SecondFragment" />
     </fragment>
 </navigation>

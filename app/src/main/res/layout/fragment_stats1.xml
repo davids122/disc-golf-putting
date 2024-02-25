@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screenBackground"
+    tools:context=".StatsFragment">
+
+
+    <TextView
+        android:id="@+id/missedShots"
+        android:layout_width="114dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="192dp"
+        android:text="@string/_100"
+        android:textAlignment="center"
+        android:textColor="@color/buttonBackground"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/restartButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.363" />
+
+    <TextView
+        android:id="@+id/madeShots"
+        android:layout_width="131dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="192dp"
+        android:text="@string/_100"
+        android:textAlignment="center"
+        android:textColor="@color/buttonBackground"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/restartButton"
+        app:layout_constraintEnd_toStartOf="@+id/missedShots"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <TextView
+        android:id="@+id/madeText"
+        android:layout_width="186dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="204dp"
+        android:text="@string/made"
+        android:textAlignment="center"
+        android:textColor="@color/buttonBackground"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/missText"
+        android:layout_width="206dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="204dp"
+        android:text="@string/missed"
+        android:textAlignment="center"
+        android:textColor="@color/buttonBackground"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/madeText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/restartButton"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="92dp"
+        android:text="@string/restart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="330dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/buttonBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/madeText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EDF4ED"
     tools:context=".SecondFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -14,54 +15,71 @@
         android:padding="16dp">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="72dp"
-            android:text="@string/hello_blank_fragment"
-            app:layout_constraintBottom_toTopOf="@+id/num_shots_text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
-
-        <TextView
             android:id="@+id/num_shots_text"
             android:layout_width="118dp"
             android:layout_height="125dp"
-            android:layout_marginBottom="148dp"
             android:text="@string/num_shots_remaining"
-            android:textColor="#070707"
-            android:textSize="34sp"
+            android:textAlignment="center"
+            android:textColor="@color/buttonBackground"
+            android:textSize="96sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.313" />
 
         <Button
             android:id="@+id/made_shot_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="146dp"
+            android:layout_height="124dp"
             android:layout_marginTop="8dp"
             android:text="@string/made_shot_text"
+            android:textColor="#D259A96A"
+            android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/missed_shot_button"
-            app:layout_constraintHorizontal_bias="0.242"
+            app:layout_constraintHorizontal_bias="0.26"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/num_shots_text"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="0.544" />
 
         <Button
             android:id="@+id/missed_shot_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:layout_marginEnd="40dp"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="146dp"
+            android:layout_height="124dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
             android:text="@string/miss_text"
+            android:textColor="#B7ED254E"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/num_shots_text" />
+            app:layout_constraintTop_toBottomOf="@+id/num_shots_text"
+            app:layout_constraintVertical_bias="0.55"
+            app:rippleColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="257dp"
+            android:layout_height="63dp"
+            android:layout_marginBottom="316dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/shots_remaining"
+            android:textAlignment="center"
+            android:textColor="@color/buttonBackground"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/num_shots_text"
+            app:layout_constraintVertical_bias="0.866" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

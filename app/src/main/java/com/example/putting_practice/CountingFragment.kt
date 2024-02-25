@@ -5,8 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.setFragmentResult
 import androidx.fragment.app.setFragmentResultListener
+import androidx.navigation.fragment.findNavController
 import com.example.putting_practice.databinding.FragmentCountingBinding
 import com.google.android.material.snackbar.Snackbar
 
@@ -21,6 +24,13 @@ class CountingFragment : Fragment() {
         set(value) {
             field = value
             "$value putts remaining".also { num_shots_View?.text = it }
+            if (value == 0) {
+                val shotsMade = numShotsMade
+                val shotsMissed = numShotsMissed
+                setFragmentResult("stats",
+                    bundleOf("madeShots" to shotsMade, "missedShots" to shotsMissed))
+                findNavController().navigate(R.id.action_CountingFragment_to_StatsFragment)
+            }
         }
 
 
