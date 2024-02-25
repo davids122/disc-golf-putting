@@ -8,3 +8,7 @@ The entire application was written in Kotlin, a language I had no prior experien
 
 ## Future plans
 In the future, I would like to add a feature that allows users to view their past putting rounds. To achieve this, I plan to build a backend for the application to allow the data to be persistent. Additionally, I want to implement a feature that gives users the option to input what they are putting with, allowing them to easily compare their stats with different putters.
+
+
+## Demo Video
+https://github.com/davids122/disc-golf-putting/assets/97635001/b57fe62b-8db0-4411-bf1d-12665a6e2b58
