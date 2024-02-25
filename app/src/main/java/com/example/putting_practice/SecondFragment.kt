@@ -67,10 +67,6 @@ class SecondFragment : Fragment(), AdapterView.OnItemSelectedListener{
 
     override fun onItemSelected(parent: AdapterView<*>, view: View?, pos: Int, id: Long) {
         num_shots_selected = parent.getItemAtPosition(pos).toString()
-        this.view?.let {
-            Snackbar.make(it, num_shots_selected, Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
     }
 
     override fun onNothingSelected(parent: AdapterView<*>) {

@@ -71,18 +71,19 @@
     <Button
         android:id="@+id/restartButton"
         style="@style/Widget.Material3.Button.ElevatedButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="106dp"
+        android:layout_height="64dp"
         android:layout_marginBottom="92dp"
         android:text="@string/restart"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <View
         android:id="@+id/divider"
-        android:layout_width="330dp"
-        android:layout_height="2dp"
+        android:layout_width="354dp"
+        android:layout_height="3dp"
         android:layout_marginTop="12dp"
         android:background="@color/buttonBackground"
         app:layout_constraintEnd_toEndOf="parent"

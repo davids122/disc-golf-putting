@@ -66,25 +66,13 @@ class CountingFragment : Fragment() {
             if(numShotsRemaining > 0) {
                 numShotsMade += 1
                 numShotsRemaining -= 1
-                if(numShotsRemaining == 0){
-                    this.view?.let {
-                        Snackbar.make(it, "made:$numShotsMade miss:$numShotsMissed", Snackbar.LENGTH_LONG)
-                            .setAction("Action", null).show()
-                    }
-                }
             }
         }
 
         binding.missedShotButton.setOnClickListener {
-            if(numShotsRemaining > 0){
+            if(numShotsRemaining > 0) {
                 numShotsMissed += 1
                 numShotsRemaining -= 1
-                if(numShotsRemaining == 0){
-                    this.view?.let {
-                        Snackbar.make(it, "made:$numShotsMade miss:$numShotsMissed", Snackbar.LENGTH_LONG)
-                            .setAction("Action", null).show()
-                    }
-                }
             }
         }
     }
